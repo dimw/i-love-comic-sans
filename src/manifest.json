@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "I like Comic Sans",
+  "description": "For people who love the Comic Sans font.",
+  "version": "1.0",
+
+  "permissions": [
+  ],
+  
+  "background": {"page": "background.html"},
+    
+  "icons"  : {
+	"48" : "icon48.png"
+  },
+  
+  "content_scripts": [ {
+    "js": [ "jquery-1.10.2.min.js", "popup.js" ],
+    "matches": [ "http://*/*", "https://*/*" ]
+  }]
+}
